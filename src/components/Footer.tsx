@@ -5,12 +5,12 @@ const Footer = () => {
     <footer className="bg-primary text-primary-foreground">
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
+
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold mb-4">Mirosław Sankiewicz</h3>
             <p className="text-primary-foreground/80 mb-4 leading-relaxed">
-              Doświadczony prawnik z Szczecina oferujący profesjonalną 
+              Doświadczony prawnik ze Szczecina oferujący profesjonalną
               pomoc prawną od ponad 30 lat.
             </p>
             <p className="text-sm text-primary-foreground/60">
@@ -32,7 +32,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-accent" />
-                <a 
+                <a
                   href="tel:+48911234567"
                   className="text-primary-foreground/80 hover:text-accent text-sm transition-colors"
                 >
@@ -41,7 +41,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-accent" />
-                <a 
+                <a
                   href="mailto:miroslaw@sankiewicz-prawnik.pl"
                   className="text-primary-foreground/80 hover:text-accent text-sm transition-colors"
                 >

@@ -13,10 +13,10 @@ const HeroSection = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with subtle gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-background"></div>
-      
+
       <div className="relative container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
+
           {/* Content */}
           <div className="text-center lg:text-left fade-in">
             <div className="mb-6">
@@ -29,20 +29,20 @@ const HeroSection = () => {
                 <span className="text-accent">Sankiewicz</span>
               </h1>
               <p className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">
-                Doświadczony prawnik z Szczecina oferujący kompleksową obsługę prawną 
+                Doświadczony prawnik ze Szczecina oferujący kompleksową obsługę prawną
                 z pasją i zaangażowaniem
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
+              <Button
                 onClick={scrollToContact}
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-medium"
               >
                 Umów konsultację
               </Button>
-              <Button 
+              <Button
                 variant="outline"
                 onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
                 size="lg"
@@ -58,9 +58,9 @@ const HeroSection = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-primary/10 rounded-2xl transform rotate-3"></div>
               <div className="relative bg-card rounded-2xl overflow-hidden shadow-xl hover-lift">
-                <img 
+                <img
                   src={lawyerPortrait}
-                  alt="Mirosław Sankiewicz - Doświadczony prawnik z Szczecina"
+                  alt="Mirosław Sankiewicz - Doświadczony prawnik ze Szczecina"
                   className="w-full h-auto object-cover"
                 />
               </div>
