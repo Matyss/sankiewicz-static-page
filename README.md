@@ -1,73 +1,116 @@
-# Welcome to your Lovable project
+# Mirosław Sankiewicz - Law Firm Website
 
-## Project info
+A professional, modern website for Mirosław Sankiewicz Law Firm in Szczecin, Poland. Built with React, TypeScript, and Tailwind CSS for optimal performance and user experience.
 
-**URL**: https://lovable.dev/projects/0dd083d5-fa1b-4158-89bd-1337e65c6045
+## 🌐 Live Website
 
-## How can I edit this code?
+- **Testing URL:** https://matyss.github.io/sankiewicz-static-page/
+- **Production URL:** miroslawsankiewicz.pl *(when ready)*
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- **Professional Design** - Clean, modern layout optimized for law firm services
+- **Responsive Design** - Works perfectly on desktop, tablet, and mobile devices
+- **Contact Form Integration** - EmailJS integration with OVH Email Pro
+- **Performance Optimized** - Fast loading times with Vite build system
+- **SEO Ready** - Semantic HTML structure for better search engine visibility
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0dd083d5-fa1b-4158-89bd-1337e65c6045) and start prompting.
+## 🛠️ Technology Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend:** React 18 + TypeScript
+- **Styling:** Tailwind CSS + shadcn/ui components
+- **Build Tool:** Vite
+- **Email Service:** EmailJS with OVH Email Pro
+- **Hosting:** GitHub Pages
+- **CI/CD:** GitHub Actions
 
-**Use your preferred IDE**
+## 🚀 Development
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js 18+ 
+- npm or yarn
 
-Follow these steps:
+### Local Development
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Clone the repository
+git clone https://github.com/Matyss/sankiewicz-static-page.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to project directory
+cd sankiewicz-static-page
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The site will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Available Scripts
 
-**Use GitHub Codespaces**
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run preview  # Preview production build locally
+npm run lint     # Run ESLint
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📧 Email Configuration
 
-## What technologies are used for this project?
+The contact form uses EmailJS to send emails directly to `adwokat@miroslawsankiewicz.pl`. The configuration is handled automatically through the integrated EmailJS service.
 
-This project is built with:
+## 🚀 Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Automatic Deployment (Current Setup)
 
-## How can I deploy this project?
+The website automatically deploys to GitHub Pages when changes are pushed to the `main` branch:
 
-Simply open [Lovable](https://lovable.dev/projects/0dd083d5-fa1b-4158-89bd-1337e65c6045) and click on Share -> Publish.
+1. **Push changes** to `main` branch
+2. **GitHub Actions** automatically builds the site
+3. **Deployed** to https://matyss.github.io/sankiewicz-static-page/
 
-## Can I connect a custom domain to my Lovable project?
+### Custom Domain Setup (When Ready)
 
-Yes, you can!
+To switch to the custom domain `miroslawsankiewicz.pl`:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. **Update DNS** records to point to GitHub Pages
+2. **Configure custom domain** in GitHub Pages settings
+3. **Update base URL** in `vite.config.ts`
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📝 Content Management
+
+### Updating Content
+
+- **Text content:** Edit React components in `src/components/`
+- **Images:** Replace files in `src/assets/`
+- **Contact information:** Update `ContactSection.tsx`
+- **Services:** Modify `ServicesSection.tsx`
+- **Testimonials:** Edit `TestimonialsSection.tsx`
+
+### Key Sections
+
+- **Hero Section** - Main banner with lawyer introduction
+- **About Section** - Professional background and experience
+- **Services Section** - Legal specializations
+- **Testimonials** - Client reviews and feedback
+- **Contact Section** - Contact form and office information
+
+## 🔧 Hosting Alternatives
+
+This project is designed for static hosting and works with:
+
+- ✅ **GitHub Pages** (current)
+- ✅ **Netlify** (with form handling)
+- ✅ **Vercel**
+- ✅ **Cloudflare Pages**
+
+## 📞 Support
+
+For technical support or modifications, contact the development team.
+
+---
+
+**Built with ❤️ for professional legal services in Szczecin**
