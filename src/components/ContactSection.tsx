@@ -1,11 +1,17 @@
 import { useState } from 'react';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Card, CardContent } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
+
+// EmailJS Configuration
+const EMAILJS_SERVICE_ID = 'service_r4sgf3s';
+const EMAILJS_TEMPLATE_ID = 'template_o2us3qq';
+const EMAILJS_PUBLIC_KEY = 'SJqItwSjnjorGao5x';
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -17,10 +23,11 @@ const ContactSection = () => {
     message: '',
     consent: false
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.consent) {
       toast({
         title: "Wymagana zgoda",
@@ -30,21 +37,60 @@ const ContactSection = () => {
       return;
     }
 
-    // Here you would typically send the form data to a server
-    toast({
-      title: "Wiadomość wysłana!",
-      description: "Dziękuję za kontakt. Odpowiem w ciągu 24 godzin.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: '',
-      consent: false
-    });
+    setIsSubmitting(true);
+
+    try {
+      // Initialize EmailJS
+      emailjs.init(EMAILJS_PUBLIC_KEY);
+
+      // Prepare template parameters
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || 'Nie podano',
+        subject: formData.subject,
+        message: formData.message,
+        current_date: new Date().toLocaleDateString('pl-PL', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit'
+        })
+      };
+
+      // Send email
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams
+      );
+
+      toast({
+        title: "Wiadomość wysłana!",
+        description: "Dziękuję za kontakt. Odpowiem najszybciej jak to możliwe.",
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+        consent: false
+      });
+
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      toast({
+        title: "Błąd wysyłania",
+        description: "Przepraszam, wystąpił błąd. Spróbuj ponownie lub skontaktuj się telefonicznie.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string | boolean) => {
@@ -67,8 +113,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "miroslaw@sankiewicz-prawnik.pl",
-      link: "mailto:miroslaw@sankiewicz-prawnik.pl"
+      content: "adwokat@miroslawsankiewicz.pl",
+      link: "mailto:adwokat@miroslawsankiewicz.pl"
     },
     {
       icon: Clock,
@@ -89,13 +135,13 @@ const ContactSection = () => {
             Umów <span className="text-accent">konsultację</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Potrzebujesz pomocy prawnej? Skontaktuj się ze mną już dziś. 
+            Potrzebujesz pomocy prawnej? Skontaktuj się ze mną już dziś.
             Pierwsza konsultacja telefoniczna jest bezpłatna.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          
+
           {/* Contact Info */}
           <div className="space-y-6 slide-up">
             {contactInfo.map((info, index) => (
@@ -110,7 +156,7 @@ const ContactSection = () => {
                         {info.title}
                       </h3>
                       {info.link ? (
-                        <a 
+                        <a
                           href={info.link}
                           className="text-muted-foreground hover:text-accent transition-colors whitespace-pre-line"
                         >
@@ -209,7 +255,7 @@ const ContactSection = () => {
                       onCheckedChange={(checked) => handleInputChange('consent', checked as boolean)}
                     />
                     <label htmlFor="consent" className="text-sm text-muted-foreground leading-relaxed">
-                      Wyrażam zgodę na przetwarzanie moich danych osobowych przez Mirosława Sankiewicza 
+                      Wyrażam zgodę na przetwarzanie moich danych osobowych przez Mirosława Sankiewicza
                       w celu udzielenia odpowiedzi na zapytanie prawne zgodnie z RODO. *
                     </label>
                   </div>
@@ -217,9 +263,17 @@ const ContactSection = () => {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-medium"
+                    disabled={isSubmitting}
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-medium disabled:opacity-50"
                   >
-                    Wyślij wiadomość
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                        Wysyłanie...
+                      </>
+                    ) : (
+                      'Wyślij wiadomość'
+                    )}
                   </Button>
                 </form>
               </CardContent>
@@ -235,7 +289,7 @@ const ContactSection = () => {
                 <MapPin className="w-12 h-12 text-accent mx-auto mb-4" />
                 <p className="text-lg font-medium text-primary mb-2">Kancelaria Prawna</p>
                 <p className="text-muted-foreground">ul. Przykładowa 123, Szczecin</p>
-                <a 
+                <a
                   href="https://maps.google.com"
                   target="_blank"
                   rel="noopener noreferrer"
