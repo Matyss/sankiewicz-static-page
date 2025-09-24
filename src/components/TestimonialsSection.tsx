@@ -6,7 +6,7 @@ const TestimonialsSection = () => {
     {
       name: "Anna Kowalska",
       role: "Właścicielka firmy",
-      content: "Pan Mirosław profesjonalnie poprowadził sprawę rozwodową. Jego empatia i znajomość prawa pozwoliły mi przejść przez ten trudny okres z godnością.",
+      content: "Sprawa rozwodowa zakończyła się szybciej, niż się spodziewałam. Pan Mirosław zadbał, aby wszystko przebiegło w spokojnej atmosferze.",
       rating: 5
     },
     {
@@ -34,7 +34,7 @@ const TestimonialsSection = () => {
             Co mówią o mnie <span className="text-accent">klienci</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Najlepszą rekomendacją mojej pracy są opinie zadowolonych klientów, 
+            Najlepszą rekomendacją mojej pracy są opinie zadowolonych klientów,
             którym mogłem pomóc w trudnych sytuacjach prawnych.
           </p>
         </div>
@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
                     "{testimonial.content}"
                   </p>
                 </div>
-                
+
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="font-semibold text-primary">
@@ -59,7 +59,7 @@ const TestimonialsSection = () => {
                       {testimonial.role}
                     </div>
                   </div>
-                  
+
                   <div className="flex space-x-1">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-accent text-accent" />

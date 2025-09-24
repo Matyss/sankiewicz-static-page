@@ -20,17 +20,13 @@ const HeroSection = () => {
           {/* Content */}
           <div className="text-center lg:text-left fade-in">
             <div className="mb-6">
-              <span className="inline-block px-4 py-2 bg-accent/10 text-accent font-medium text-sm rounded-full mb-4">
-                30+ lat doświadczenia
-              </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
                 Mirosław
                 <br />
                 <span className="text-accent">Sankiewicz</span>
               </h1>
               <p className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">
-                Doświadczony prawnik ze Szczecina oferujący kompleksową obsługę prawną
-                z pasją i zaangażowaniem
+                Prawnik ze Szczecina z 30-letnim doświadczeniem. Skuteczna pomoc prawna w sprawach gospodarczych, rodzinnych, karnych i cywilnych.
               </p>
             </div>
 
