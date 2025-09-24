@@ -26,7 +26,7 @@ const HeroSection = () => {
                 <span className="text-accent">Sankiewicz</span>
               </h1>
               <p className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">
-                Prawnik ze Szczecina z 30-letnim doświadczeniem. Skuteczna pomoc prawna w sprawach gospodarczych, rodzinnych, karnych i cywilnych.
+                Prawnik ze Szczecina z 35-letnim doświadczeniem. Skuteczna pomoc prawna w sprawach gospodarczych, rodzinnych, karnych i cywilnych.
               </p>
             </div>
 

@@ -7,6 +7,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Card, CardContent } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import emailjs from '@emailjs/browser';
+import PrivacyPolicyModal from './PrivacyPolicyModal';
 
 // EmailJS Configuration
 const EMAILJS_SERVICE_ID = 'service_r4sgf3s';
@@ -255,8 +256,16 @@ const ContactSection = () => {
                       onCheckedChange={(checked) => handleInputChange('consent', checked as boolean)}
                     />
                     <label htmlFor="consent" className="text-sm text-muted-foreground leading-relaxed">
-                      Wyrażam zgodę na przetwarzanie moich danych osobowych przez Mirosława Sankiewicza
-                      w celu udzielenia odpowiedzi na zapytanie prawne zgodnie z RODO. *
+                      Zapoznałem(am) się z{" "}
+                      <PrivacyPolicyModal>
+                        <button
+                          type="button"
+                          className="text-accent hover:text-accent/80 underline font-medium transition-colors"
+                        >
+                          Polityką prywatności
+                        </button>
+                      </PrivacyPolicyModal>
+                      {" "}i akceptuję jej postanowienia. Wyrażam zgodę na przetwarzanie moich danych osobowych przez Kancelarię Mirosława Sankiewicza w celu udzielenia odpowiedzi na zapytanie, zgodnie z polityką prywatności. *
                     </label>
                   </div>
 

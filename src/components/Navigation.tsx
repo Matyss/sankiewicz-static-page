@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/logo_2.png';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,46 +22,52 @@ const Navigation = () => {
   };
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-background/95 backdrop-blur-md shadow-md' 
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+          ? 'bg-background/95 backdrop-blur-md shadow-md'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <nav className="container-custom">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <button 
+            <button
               onClick={() => scrollToSection('hero')}
-              className="text-xl lg:text-2xl font-semibold text-primary hover-gold"
+              className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
             >
-              Mirosław Sankiewicz
+              <img
+                src={logo}
+                alt="Mirosław Sankiewicz - Kancelaria Prawna"
+                className="h-8 lg:h-10 w-auto"
+              />
+              <span className="text-lg lg:text-xl font-semibold text-primary hidden sm:block">
+                Mirosław Sankiewicz
+              </span>
             </button>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <button 
+            <button
               onClick={() => scrollToSection('about')}
               className="text-sm font-medium text-muted-foreground hover-gold"
             >
               O mnie
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('services')}
               className="text-sm font-medium text-muted-foreground hover-gold"
             >
               Specjalizacje
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('testimonials')}
               className="text-sm font-medium text-muted-foreground hover-gold"
             >
               Opinie
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('contact')}
               className="text-sm font-medium text-muted-foreground hover-gold"
             >
@@ -69,7 +76,7 @@ const Navigation = () => {
           </div>
 
           {/* CTA Button */}
-          <Button 
+          <Button
             onClick={() => scrollToSection('contact')}
             className="bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-2 text-sm font-medium transition-colors"
           >

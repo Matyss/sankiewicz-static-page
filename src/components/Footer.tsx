@@ -1,4 +1,6 @@
 import { MapPin, Phone, Mail } from 'lucide-react';
+import PrivacyPolicyModal from './PrivacyPolicyModal';
+import logoDark from '@/assets/logo_1.png';
 
 const Footer = () => {
   return (
@@ -8,10 +10,17 @@ const Footer = () => {
 
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Mirosław Sankiewicz</h3>
+            <div className="flex items-center space-x-3 mb-4">
+              <img
+                src={logoDark}
+                alt="Mirosław Sankiewicz - Kancelaria Prawna"
+                className="h-8 w-auto"
+              />
+              <h3 className="text-2xl font-bold">Mirosław Sankiewicz</h3>
+            </div>
             <p className="text-primary-foreground/80 mb-4 leading-relaxed">
               Doświadczony prawnik ze Szczecina oferujący profesjonalną
-              pomoc prawną od ponad 30 lat.
+              pomoc prawną od ponad 35 lat.
             </p>
             <p className="text-sm text-primary-foreground/60">
               Kancelaria Prawna<br />
@@ -42,10 +51,10 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-accent" />
                 <a
-                  href="mailto:miroslaw@sankiewicz-prawnik.pl"
+                  href="mailto:adwokat@miroslawsankiewicz.pl"
                   className="text-primary-foreground/80 hover:text-accent text-sm transition-colors"
                 >
-                  miroslaw@sankiewicz-prawnik.pl
+                  adwokat@miroslawsankiewicz.pl
                 </a>
               </div>
             </div>
@@ -66,15 +75,14 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-primary-foreground/60 text-sm">
-              © 2024 Mirosław Sankiewicz. Wszystkie prawa zastrzeżone.
+              © 2025 Mirosław Sankiewicz. Wszystkie prawa zastrzeżone.
             </p>
             <div className="flex space-x-6 text-sm">
-              <button className="text-primary-foreground/60 hover:text-accent transition-colors">
-                Polityka prywatności
-              </button>
-              <button className="text-primary-foreground/60 hover:text-accent transition-colors">
-                Regulamin
-              </button>
+              <PrivacyPolicyModal>
+                <button className="text-primary-foreground/60 hover:text-accent transition-colors">
+                  Polityka prywatności
+                </button>
+              </PrivacyPolicyModal>
             </div>
           </div>
         </div>

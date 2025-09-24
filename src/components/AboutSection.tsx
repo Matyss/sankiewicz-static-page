@@ -2,7 +2,7 @@ import { CheckCircle, Scale, Users, Award } from 'lucide-react';
 
 const AboutSection = () => {
   const achievements = [
-    { icon: Scale, text: "30+ lat praktyki prawniczej" },
+    { icon: Scale, text: "35 lat praktyki prawniczej" },
     { icon: Users, text: "Setki zadowolonych klientów" },
     { icon: Award, text: "Specjalizacja w wielu dziedzinach prawa" },
     { icon: CheckCircle, text: "Indywidualne podejście do każdej sprawy" }
@@ -12,7 +12,7 @@ const AboutSection = () => {
     <section id="about" className="section-padding bg-secondary/30">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
+
           {/* Content */}
           <div className="fade-in">
             <div className="mb-8">
@@ -23,13 +23,13 @@ const AboutSection = () => {
                 Doświadczenie, które <span className="text-accent">buduje zaufanie</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Od ponad 30 lat pomagam klientom w rozwiązywaniu ich problemów prawnych. 
-                Moją specjalnością jest łączenie głębokiej wiedzy prawniczej z indywidualnym, 
+                Od ponad 35 lat pomagam klientom w rozwiązywaniu ich problemów prawnych.
+                Moją specjalnością jest łączenie głębokiej wiedzy prawniczej z indywidualnym,
                 empatycznym podejściem do każdego klienta.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Wierzę, że prawo powinno służyć ludziom, dlatego zawsze staram się 
-                tłumaczyć skomplikowane kwestie prawne w sposób zrozumiały i przystępny. 
+                Wierzę, że prawo powinno służyć ludziom, dlatego zawsze staram się
+                tłumaczyć skomplikowane kwestie prawne w sposób zrozumiały i przystępny.
                 Każda sprawa jest dla mnie wyzwaniem, które podejmuję z pełnym zaangażowaniem.
               </p>
             </div>
@@ -52,15 +52,15 @@ const AboutSection = () => {
           <div className="slide-up">
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center p-6 bg-card rounded-xl shadow-sm hover-lift">
-                <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">30+</div>
+                <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">35</div>
                 <div className="text-sm text-muted-foreground">Lat doświadczenia</div>
               </div>
               <div className="text-center p-6 bg-card rounded-xl shadow-sm hover-lift">
-                <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">500+</div>
-                <div className="text-sm text-muted-foreground">Spraw wygranych</div>
+                <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">380</div>
+                <div className="text-sm text-muted-foreground">Wygranych spraw</div>
               </div>
               <div className="text-center p-6 bg-card rounded-xl shadow-sm hover-lift">
-                <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">95%</div>
+                <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">98%</div>
                 <div className="text-sm text-muted-foreground">Zadowolonych klientów</div>
               </div>
               <div className="text-center p-6 bg-card rounded-xl shadow-sm hover-lift">
