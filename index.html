@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <meta charset="UTF-8" />
@@ -19,7 +19,20 @@
   <!-- SEO Meta Tags -->
   <meta name="author" content="Mirosław Sankiewicz" />
   <meta name="keywords"
-    content="prawnik Szczecin, adwokat Szczecin, kancelaria prawna, prawo gospodarcze, prawo rodzinne, prawo karne, prawo cywilne" />
+    content="prawnik Szczecin, adwokat Szczecin, kancelaria prawna Szczecin, prawo gospodarcze Szczecin, prawo rodzinne Szczecin, prawo karne Szczecin, prawo cywilne, pomoc prawna Szczecin, konsultacja prawna, doświadczony prawnik" />
+
+  <!-- Geo-targeting -->
+  <meta name="geo.region" content="PL-ZP" />
+  <meta name="geo.placename" content="Szczecin" />
+  <meta name="geo.position" content="53.4285;14.5528" />
+  <meta name="ICBM" content="53.4285, 14.5528" />
+
+  <!-- Business Info -->
+  <meta name="contact" content="adwokat@miroslawsankiewicz.pl" />
+  <meta name="coverage" content="Szczecin, Zachodniopomorskie, Polska" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://miroslawsankiewicz.pl/" />
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Mirosław Sankiewicz - Kancelaria Prawna | 35 lat doświadczenia" />
@@ -33,6 +46,99 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mirosław Sankiewicz - Kancelaria Prawna" />
   <meta name="twitter:description" content="Doświadczony prawnik ze Szczecina. Ponad 35 lat praktyki prawnej." />
+
+  <!-- Structured Data - JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://miroslawsankiewicz.pl/#business",
+        "name": "Kancelaria Prawna Mirosław Sankiewicz",
+        "alternateName": "Mirosław Sankiewicz Prawnik",
+        "description": "Doświadczony prawnik ze Szczecina z 35-letnim doświadczeniem. Specjalizacja w prawie gospodarczym, rodzinnym, karnym i cywilnym.",
+        "url": "https://miroslawsankiewicz.pl",
+        "telephone": "+48601707117",
+        "email": "adwokat@miroslawsankiewicz.pl",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ul. Przykładowa 123",
+          "addressLocality": "Szczecin",
+          "postalCode": "70-001",
+          "addressCountry": "PL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 53.4285,
+          "longitude": 14.5528
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "13:00"
+          }
+        ],
+        "areaServed": {
+          "@type": "Place",
+          "name": "Szczecin, Zachodniopomorskie, Polska"
+        }
+      },
+      {
+        "@type": "Attorney",
+        "@id": "https://miroslawsankiewicz.pl/#attorney",
+        "name": "Mirosław Sankiewicz",
+        "jobTitle": "Prawnik / Adwokat",
+        "description": "Doświadczony prawnik z 35-letnim stażem, specjalizujący się w prawie gospodarczym, rodzinnym, karnym i cywilnym.",
+        "url": "https://miroslawsankiewicz.pl",
+        "telephone": "+48601707117",
+        "email": "adwokat@miroslawsankiewicz.pl",
+        "worksFor": {
+          "@id": "https://miroslawsankiewicz.pl/#business"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ul. Przykładowa 123",
+          "addressLocality": "Szczecin",
+          "postalCode": "70-001",
+          "addressCountry": "PL"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Szczecin, Zachodniopomorskie, Polska"
+        },
+        "knowsAbout": [
+          "Prawo gospodarcze",
+          "Prawo rodzinne", 
+          "Prawo karne",
+          "Prawo cywilne",
+          "Konsultacje prawne",
+          "Reprezentacja sądowa"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://miroslawsankiewicz.pl/#website",
+        "url": "https://miroslawsankiewicz.pl",
+        "name": "Mirosław Sankiewicz - Kancelaria Prawna",
+        "description": "Profesjonalna strona kancelarii prawnej Mirosława Sankiewicza w Szczecinie",
+        "publisher": {
+          "@id": "https://miroslawsankiewicz.pl/#business"
+        },
+        "inLanguage": "pl-PL"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>

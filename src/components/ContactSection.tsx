@@ -108,8 +108,8 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Telefon",
-      content: "+48 91 123 45 67",
-      link: "tel:+48911234567"
+      content: "+48 601 707 117",
+      link: "tel:+48601707117"
     },
     {
       icon: Mail,
