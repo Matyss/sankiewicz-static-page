@@ -8,6 +8,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import emailjs from '@emailjs/browser';
 import PrivacyPolicyModal from './PrivacyPolicyModal';
+import lawyerPortrait from '@/assets/lawyer-portrait_2.png';
 
 // EmailJS Configuration
 const EMAILJS_SERVICE_ID = 'service_r4sgf3s';
@@ -132,6 +133,24 @@ const ContactSection = () => {
           <span className="inline-block px-4 py-2 bg-accent/10 text-accent font-medium text-sm rounded-full mb-4">
             Kontakt
           </span>
+
+          {/* Lawyer Portrait */}
+          <div className="flex justify-center mb-6">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/10 rounded-full blur-lg transform scale-110"></div>
+              <div className="relative w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-white shadow-xl bg-gradient-to-br from-accent/5 to-primary/5">
+                <img
+                  src={lawyerPortrait}
+                  alt="Mirosław Sankiewicz - Prawnik"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-accent rounded-full border-4 border-white flex items-center justify-center">
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
           <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
             Umów <span className="text-accent">konsultację</span>
           </h2>

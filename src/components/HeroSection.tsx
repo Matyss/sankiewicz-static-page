@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import lawyerPortrait from '@/assets/lawyer-portrait.jpg';
+import statueImage from '@/assets/statue.jpg';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -49,15 +49,15 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Portrait */}
+          {/* Statue Image */}
           <div className="relative lg:order-last slide-up">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-primary/10 rounded-2xl transform rotate-3"></div>
+            <div className="relative w-4/5 mx-auto">
+              <div className="absolute -inset-3 bg-gradient-to-tr from-accent/20 to-primary/10 rounded-2xl transform rotate-3"></div>
               <div className="relative bg-card rounded-2xl overflow-hidden shadow-xl hover-lift">
                 <img
-                  src={lawyerPortrait}
-                  alt="Mirosław Sankiewicz - Doświadczony prawnik ze Szczecina"
-                  className="w-full h-auto object-cover"
+                  src={statueImage}
+                  alt="Sprawiedliwość - Symbol prawa i sprawiedliwości"
+                  className="w-full h-auto object-cover rounded-2xl"
                 />
               </div>
             </div>
