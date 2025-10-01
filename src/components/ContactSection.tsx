@@ -165,11 +165,11 @@ const ContactSection = () => {
           {/* Contact Info */}
           <div className="space-y-6 slide-up">
             {contactInfo.map((info, index) => (
-              <Card key={index} className="hover-lift border-0 shadow-md">
+              <Card key={index} className="hover-lift border-0 shadow-md transition-all duration-300 hover:shadow-lg group">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
-                      <info.icon className="w-6 h-6 text-accent" />
+                    <div className="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:bg-accent/20 group-hover:scale-110 icon-bounce">
+                      <info.icon className="w-6 h-6 text-accent transition-all duration-300 group-hover:scale-110" />
                     </div>
                     <div className="flex-1">
                       <h3 className="font-semibold text-primary mb-2">
@@ -208,7 +208,7 @@ const ContactSection = () => {
                         value={formData.name}
                         onChange={(e) => handleInputChange('name', e.target.value)}
                         required
-                        className="w-full"
+                        className="w-full form-input"
                         placeholder="Jan Kowalski"
                       />
                     </div>
@@ -292,7 +292,7 @@ const ContactSection = () => {
                     type="submit"
                     size="lg"
                     disabled={isSubmitting}
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-medium disabled:opacity-50"
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 text-lg font-medium disabled:opacity-50 btn-primary transition-all duration-300"
                   >
                     {isSubmitting ? (
                       <>

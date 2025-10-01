@@ -4,8 +4,8 @@ import { Card, CardContent } from '@/components/ui/card';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Anna Kowalska",
-      role: "Właścicielka firmy",
+      name: "Anna",
+      role: "Właścicielka firmy w Szczecinie",
       content: "Sprawa rozwodowa zakończyła się szybciej, niż się spodziewałam. Pan Mirosław zadbał, aby wszystko przebiegło w spokojnej atmosferze.",
       rating: 5
     },

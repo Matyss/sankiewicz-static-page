@@ -43,17 +43,21 @@ const ServicesSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="hover-lift slide-up group border-0 shadow-md">
+            <Card
+              key={index}
+              className="hover-lift slide-up group border-0 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <CardContent className="p-8 text-center">
                 <div className="mb-6">
-                  <div className="w-16 h-16 mx-auto bg-accent/10 rounded-2xl flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                    <service.icon className="w-8 h-8 text-accent" />
+                  <div className="w-16 h-16 mx-auto bg-accent/10 rounded-2xl flex items-center justify-center group-hover:bg-accent/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+                    <service.icon className="w-8 h-8 text-accent transition-all duration-300 group-hover:scale-110" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-primary mb-4">
+                <h3 className="text-xl font-semibold text-primary mb-4 transition-colors duration-300 group-hover:text-accent">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed transition-colors duration-300 group-hover:text-primary/80">
                   {service.description}
                 </p>
               </CardContent>
@@ -67,7 +71,7 @@ const ServicesSection = () => {
           </p>
           <button
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            className="text-accent font-medium hover:text-accent/80 transition-colors"
+            className="text-accent font-medium hover:text-accent/80 transition-all duration-300 hover:translate-x-1 icon-bounce"
           >
             Skontaktuj się ze mną →
           </button>
