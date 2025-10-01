@@ -62,7 +62,7 @@ const AboutSection = () => {
                   </div>
                   <div className="ml-6 bg-card p-4 rounded-lg shadow-sm hover-lift flex-1">
                     <div className="font-semibold text-primary mb-1">Rozpoczęcie praktyki prawniczej</div>
-                    <div className="text-sm text-muted-foreground">Pierwsze kroki w zawodzie prawnika</div>
+                    <div className="text-sm text-muted-foreground">Początek pracy zawodowej i pierwsze sprawy sądowe w Szczecinie</div>
                   </div>
                 </div>
 
@@ -72,7 +72,7 @@ const AboutSection = () => {
                   </div>
                   <div className="ml-6 bg-card p-4 rounded-lg shadow-sm hover-lift flex-1">
                     <div className="font-semibold text-primary mb-1">Pierwsze duże sprawy gospodarcze</div>
-                    <div className="text-sm text-muted-foreground">Specjalizacja w prawie biznesowym</div>
+                    <div className="text-sm text-muted-foreground">Doświadczenie w obsłudze firm i sporach handlowych</div>
                   </div>
                 </div>
 
@@ -82,7 +82,7 @@ const AboutSection = () => {
                   </div>
                   <div className="ml-6 bg-card p-4 rounded-lg shadow-sm hover-lift flex-1">
                     <div className="font-semibold text-primary mb-1">Rozwój kancelarii w Szczecinie</div>
-                    <div className="text-sm text-muted-foreground">Rozszerzenie działalności na region</div>
+                    <div className="text-sm text-muted-foreground">Stała obsługa klientów indywidualnych i przedsiębiorców z regionu</div>
                   </div>
                 </div>
 
@@ -92,7 +92,7 @@ const AboutSection = () => {
                   </div>
                   <div className="ml-6 bg-gradient-to-r from-accent/5 to-primary/5 p-4 rounded-lg shadow-sm hover-lift flex-1 border border-accent/20">
                     <div className="font-semibold text-primary mb-1">Ponad 35 lat doświadczenia w zawodzie</div>
-                    <div className="text-sm text-muted-foreground">Kontynuacja profesjonalnej pomocy prawnej</div>
+                    <div className="text-sm text-muted-foreground">Kontynuacja profesjonalnej pomocy prawnej dla osób prywatnych i firm</div>
                   </div>
                 </div>
               </div>
