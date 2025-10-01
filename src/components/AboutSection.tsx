@@ -3,7 +3,7 @@ import { CheckCircle, Scale, Users, Award } from 'lucide-react';
 const AboutSection = () => {
   const achievements = [
     { icon: Scale, text: "35 lat praktyki prawniczej" },
-    { icon: Users, text: "Setki zadowolonych klientów" },
+    { icon: Users, text: "Obsługa osób prywatnych i firm" },
     { icon: Award, text: "Specjalizacja w wielu dziedzinach prawa" },
     { icon: CheckCircle, text: "Indywidualne podejście do każdej sprawy" }
   ];
