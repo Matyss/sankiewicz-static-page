@@ -104,7 +104,7 @@ const ContactSection = () => {
       icon: MapPin,
       title: "Adres kancelarii",
       content: "ul. Przykładowa 123\n70-001 Szczecin",
-      link: "https://maps.google.com"
+      link: "https://www.google.com/maps/search/?api=1&query=ul.+Przykładowa+123,+70-001+Szczecin,+Poland"
     },
     {
       icon: Phone,
@@ -318,7 +318,7 @@ const ContactSection = () => {
                 <p className="text-lg font-medium text-primary mb-2">Kancelaria Prawna</p>
                 <p className="text-muted-foreground">ul. Przykładowa 123, Szczecin</p>
                 <a
-                  href="https://maps.google.com"
+                  href="https://www.google.com/maps/search/?api=1&query=ul.+Przykładowa+123,+70-001+Szczecin,+Poland"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-4 text-accent hover:text-accent/80 font-medium"

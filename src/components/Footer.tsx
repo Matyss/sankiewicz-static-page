@@ -35,9 +35,14 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-accent" />
-                <span className="text-primary-foreground/80 text-sm">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=ul.+Przykładowa+123,+70-001+Szczecin,+Poland"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/80 hover:text-accent text-sm transition-colors"
+                >
                   ul. Przykładowa 123, 70-001 Szczecin
-                </span>
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-accent" />

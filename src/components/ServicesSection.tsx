@@ -1,4 +1,4 @@
-import { Building2, Heart, Shield, FileText } from 'lucide-react';
+import { Building2, Users, Shield, FileText } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const ServicesSection = () => {
@@ -9,7 +9,7 @@ const ServicesSection = () => {
       description: "Kompleksowa obsługa firm, umowy handlowe, spory gospodarcze i doradztwo biznesowe"
     },
     {
-      icon: Heart,
+      icon: Users,
       title: "Prawo rodzinne",
       description: "Rozwody, alimenty, ustalenie ojcostwa, sprawy opiekuńcze z empatią i dyskrecją"
     },
@@ -36,7 +36,7 @@ const ServicesSection = () => {
             Obszary <span className="text-accent">mojej praktyki</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Oferuję profesjonalną pomoc prawną w kluczowych obszarach prawa, 
+            Oferuję profesjonalną pomoc prawną w kluczowych obszarach prawa,
             zawsze z dbałością o najwyższe standardy obsługi klienta.
           </p>
         </div>
@@ -65,7 +65,7 @@ const ServicesSection = () => {
           <p className="text-muted-foreground mb-6">
             Potrzebujesz pomocy w innej dziedzinie prawa?
           </p>
-          <button 
+          <button
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="text-accent font-medium hover:text-accent/80 transition-colors"
           >
