@@ -48,24 +48,53 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Stats */}
+          {/* Timeline */}
           <div className="slide-up">
-            <div className="grid grid-cols-2 gap-6">
-              <div className="text-center p-6 bg-card rounded-xl shadow-sm hover-lift">
-                <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">35</div>
-                <div className="text-sm text-muted-foreground">Lat doświadczenia</div>
-              </div>
-              <div className="text-center p-6 bg-card rounded-xl shadow-sm hover-lift">
-                <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">380</div>
-                <div className="text-sm text-muted-foreground">Wygranych spraw</div>
-              </div>
-              <div className="text-center p-6 bg-card rounded-xl shadow-sm hover-lift">
-                <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">98%</div>
-                <div className="text-sm text-muted-foreground">Zadowolonych klientów</div>
-              </div>
-              <div className="text-center p-6 bg-card rounded-xl shadow-sm hover-lift">
-                <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">24/7</div>
-                <div className="text-sm text-muted-foreground">Dostępność w pilnych sprawach</div>
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-accent/20"></div>
+
+              {/* Timeline Items */}
+              <div className="space-y-8">
+                <div className="relative flex items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-accent rounded-full flex items-center justify-center shadow-md z-10">
+                    <span className="text-white font-bold text-sm">1989</span>
+                  </div>
+                  <div className="ml-6 bg-card p-4 rounded-lg shadow-sm hover-lift flex-1">
+                    <div className="font-semibold text-primary mb-1">Rozpoczęcie praktyki prawniczej</div>
+                    <div className="text-sm text-muted-foreground">Pierwsze kroki w zawodzie prawnika</div>
+                  </div>
+                </div>
+
+                <div className="relative flex items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-accent rounded-full flex items-center justify-center shadow-md z-10">
+                    <span className="text-white font-bold text-sm">1995</span>
+                  </div>
+                  <div className="ml-6 bg-card p-4 rounded-lg shadow-sm hover-lift flex-1">
+                    <div className="font-semibold text-primary mb-1">Pierwsze duże sprawy gospodarcze</div>
+                    <div className="text-sm text-muted-foreground">Specjalizacja w prawie biznesowym</div>
+                  </div>
+                </div>
+
+                <div className="relative flex items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-accent rounded-full flex items-center justify-center shadow-md z-10">
+                    <span className="text-white font-bold text-sm">2005</span>
+                  </div>
+                  <div className="ml-6 bg-card p-4 rounded-lg shadow-sm hover-lift flex-1">
+                    <div className="font-semibold text-primary mb-1">Rozwój kancelarii w Szczecinie</div>
+                    <div className="text-sm text-muted-foreground">Rozszerzenie działalności na region</div>
+                  </div>
+                </div>
+
+                <div className="relative flex items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-md z-10">
+                    <span className="text-white font-bold text-sm">2025</span>
+                  </div>
+                  <div className="ml-6 bg-gradient-to-r from-accent/5 to-primary/5 p-4 rounded-lg shadow-sm hover-lift flex-1 border border-accent/20">
+                    <div className="font-semibold text-primary mb-1">Ponad 35 lat doświadczenia w zawodzie</div>
+                    <div className="text-sm text-muted-foreground">Kontynuacja profesjonalnej pomocy prawnej</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
