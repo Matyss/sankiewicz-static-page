@@ -10,13 +10,13 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      name: "Tomasz Nowak",
-      role: "Przedsiębiorca",
+      name: "Tomasz",
+      role: "Przedsiębiorca z regionu",
       content: "Dzięki Panu Mirosławowi udało się rozwiązać skomplikowany spór gospodarczy. Jego doświadczenie i skuteczność są niezaprzeczalne.",
       rating: 5
     },
     {
-      name: "Maria Wiśniewska",
+      name: "Maria",
       role: "Klientka prywatna",
       content: "Bardzo profesjonalne i życzliwe podejście. Pan Mirosław zawsze znajdował czas na wyjaśnienie wszystkich wątpliwości. Zdecydowanie polecam!",
       rating: 5
