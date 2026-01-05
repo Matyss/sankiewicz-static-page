@@ -13,19 +13,17 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <img
                 src={logoDark}
-                alt="Mirosław Sankiewicz - Kancelaria Prawna"
+                alt="Mirosław Sankiewicz - Kancelaria Adwokacka"
                 className="h-8 w-auto"
               />
               <h3 className="text-2xl font-bold">Mirosław Sankiewicz</h3>
             </div>
             <p className="text-primary-foreground/80 mb-4 leading-relaxed">
-              Doświadczony prawnik ze Szczecina oferujący profesjonalną
-              pomoc prawną od ponad 35 lat.
+              Doświadczony adwokat ze Szczecina oferujący profesjonalną pomoc prawną.
             </p>
             <p className="text-sm text-primary-foreground/60">
-              Kancelaria Prawna<br />
-              NIP: 123-456-78-90<br />
-              REGON: 123456789
+              Kancelaria Adwokacka<br />
+              NIP: 8520018068
             </p>
           </div>
 
@@ -36,12 +34,12 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-accent" />
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=ul.+Przykładowa+123,+70-001+Szczecin,+Poland"
+                  href="https://www.google.com/maps/search/?api=1&query=ul.+Dworcowa+20b,+70-952+Szczecin,+Poland"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary-foreground/80 hover:text-accent text-sm transition-colors"
                 >
-                  ul. Przykładowa 123, 70-001 Szczecin
+                  ul. Dworcowa 20b, skrytka pocztowa nr 772<br />70-952 Szczecin
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -73,6 +71,7 @@ const Footer = () => {
               <li>Prawo rodzinne</li>
               <li>Prawo karne</li>
               <li>Prawo cywilne</li>
+              <li>Prawo administracyjne</li>
             </ul>
           </div>
         </div>

@@ -194,11 +194,10 @@ const FAQSection = () => {
                         Najczęściej zadawane pytania
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
-                        Odpowiedzi na <span className="text-accent">Twoje pytania</span>
+                        Najczęściej zadawane <span className="text-accent">pytania</span>
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące usług prawnych.
-                        Nie znalazłeś odpowiedzi? Skontaktuj się ze mną bezpośrednio.
+                        Podstawowe informacje dotyczące procedur prawnych.
                     </p>
                 </div>
 
@@ -277,16 +276,16 @@ const FAQSection = () => {
                     <Card className="border-0 shadow-lg bg-gradient-to-r from-primary/5 to-accent/5">
                         <CardContent className="p-8">
                             <h3 className="text-2xl font-bold text-primary mb-4">
-                                Nie znalazłeś odpowiedzi na swoje pytanie?
+                                Nie znalazłeś odpowiedzi?
                             </h3>
                             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                                Skontaktuj się ze mną bezpośrednio. Pierwsza konsultacja telefoniczna jest bezpłatna.
+                                Skontaktuj się bezpośrednio.
                             </p>
                             <button
                                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                                 className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-lg font-medium transition-colors"
                             >
-                                Zadaj pytanie
+                                Kontakt
                             </button>
                         </CardContent>
                     </Card>

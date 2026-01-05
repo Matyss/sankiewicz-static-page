@@ -38,7 +38,7 @@ const Navigation = () => {
             >
               <img
                 src={logo}
-                alt="Mirosław Sankiewicz - Kancelaria Prawna"
+                alt="Mirosław Sankiewicz - Kancelaria Adwokacka"
                 className="h-8 lg:h-10 w-auto"
               />
               <span className="text-lg lg:text-xl font-semibold text-primary hidden sm:block">
@@ -50,22 +50,10 @@ const Navigation = () => {
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection('about')}
-              className="text-sm font-medium text-muted-foreground hover-gold"
-            >
-              O mnie
-            </button>
-            <button
               onClick={() => scrollToSection('services')}
               className="text-sm font-medium text-muted-foreground hover-gold"
             >
               Specjalizacje
-            </button>
-            <button
-              onClick={() => scrollToSection('testimonials')}
-              className="text-sm font-medium text-muted-foreground hover-gold"
-            >
-              Opinie
             </button>
             <button
               onClick={() => scrollToSection('faq')}

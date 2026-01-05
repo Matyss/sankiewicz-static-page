@@ -26,7 +26,7 @@ const HeroSection = () => {
                 <span className="text-accent">Sankiewicz</span>
               </h1>
               <p className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">
-                Prawnik ze Szczecina z 35-letnim doświadczeniem. Skuteczna pomoc prawna w sprawach gospodarczych, rodzinnych, karnych i cywilnych.
+                Doświadczony adwokat ze Szczecina. Profesjonalna pomoc prawna w sprawach gospodarczych, rodzinnych, karnych, cywilnych i administracyjnych.
               </p>
             </div>
 
@@ -40,11 +40,11 @@ const HeroSection = () => {
               </Button>
               <Button
                 variant="outline"
-                onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                 size="lg"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg"
               >
-                Dowiedz się więcej
+                Zobacz specjalizacje
               </Button>
             </div>
           </div>

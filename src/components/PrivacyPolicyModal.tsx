@@ -32,8 +32,9 @@ const PrivacyPolicyModal = ({ children }: PrivacyPolicyModalProps) => {
                         <h3 className="font-semibold text-primary mb-2">Administrator danych osobowych</h3>
                         <p>
                             <strong>Mirosław Sankiewicz</strong><br />
-                            ul. Przykładowa 123<br />
-                            70-001 Szczecin
+                            ul. Dworcowa 20b<br />
+                            skrytka pocztowa nr 772<br />
+                            70-952 Szczecin
                         </p>
                     </div>
 

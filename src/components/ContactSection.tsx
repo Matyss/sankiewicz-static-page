@@ -102,9 +102,9 @@ const ContactSection = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Adres kancelarii",
-      content: "ul. Przykładowa 123\n70-001 Szczecin",
-      link: "https://www.google.com/maps/search/?api=1&query=ul.+Przykładowa+123,+70-001+Szczecin,+Poland"
+      title: "Adres",
+      content: "ul. Dworcowa 20b\nskrytka pocztowa nr 772\n70-952 Szczecin",
+      link: "https://www.google.com/maps/search/?api=1&query=ul.+Dworcowa+20b,+70-952+Szczecin,+Poland"
     },
     {
       icon: Phone,
@@ -121,7 +121,7 @@ const ContactSection = () => {
     {
       icon: Clock,
       title: "Godziny pracy",
-      content: "Pn-Pt: 9:00 - 17:00\nSb: 9:00 - 13:00",
+      content: "Pn-Pt: 9:00 - 17:00",
       link: null
     }
   ];
@@ -141,7 +141,7 @@ const ContactSection = () => {
               <div className="relative w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-white shadow-xl bg-gradient-to-br from-accent/5 to-primary/5">
                 <img
                   src={lawyerPortrait}
-                  alt="Mirosław Sankiewicz - Prawnik"
+                  alt="Mirosław Sankiewicz - Adwokat"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
@@ -155,8 +155,7 @@ const ContactSection = () => {
             Umów <span className="text-accent">konsultację</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Potrzebujesz pomocy prawnej? Skontaktuj się ze mną już dziś.
-            Pierwsza konsultacja telefoniczna jest bezpłatna.
+            Potrzebujesz pomocy prawnej? Skontaktuj się już dziś.
           </p>
         </div>
 
@@ -222,7 +221,7 @@ const ContactSection = () => {
                         onChange={(e) => handleInputChange('email', e.target.value)}
                         required
                         className="w-full"
-                        placeholder="jan@example.com"
+                        placeholder="jan.kowalski@gmail.com"
                       />
                     </div>
                   </div>
@@ -284,7 +283,7 @@ const ContactSection = () => {
                           Polityką prywatności
                         </button>
                       </PrivacyPolicyModal>
-                      {" "}i akceptuję jej postanowienia. Wyrażam zgodę na przetwarzanie moich danych osobowych przez Kancelarię Mirosława Sankiewicza w celu udzielenia odpowiedzi na zapytanie, zgodnie z polityką prywatności. *
+                      {" "}i akceptuję jej postanowienia. Wyrażam zgodę na przetwarzanie moich danych osobowych przez Kancelarię Adwokacką Mirosława Sankiewicza w celu udzielenia odpowiedzi na zapytanie, zgodnie z polityką prywatności. *
                     </label>
                   </div>
 
@@ -315,10 +314,10 @@ const ContactSection = () => {
             <div className="h-64 lg:h-80 bg-gray-100 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="w-12 h-12 text-accent mx-auto mb-4" />
-                <p className="text-lg font-medium text-primary mb-2">Kancelaria Prawna</p>
-                <p className="text-muted-foreground">ul. Przykładowa 123, Szczecin</p>
+                <p className="text-lg font-medium text-primary mb-2">Kancelaria Adwokacka</p>
+                <p className="text-muted-foreground">ul. Dworcowa 20b, skrytka pocztowa nr 772<br />70-952 Szczecin</p>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=ul.+Przykładowa+123,+70-001+Szczecin,+Poland"
+                  href="https://www.google.com/maps/search/?api=1&query=ul.+Dworcowa+20b,+70-952+Szczecin,+Poland"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-4 text-accent hover:text-accent/80 font-medium"

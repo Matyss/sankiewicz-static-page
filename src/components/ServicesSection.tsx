@@ -1,4 +1,4 @@
-import { Building2, Users, Shield, FileText } from 'lucide-react';
+import { Building2, Users, Shield, FileText, Landmark } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const ServicesSection = () => {
@@ -6,22 +6,27 @@ const ServicesSection = () => {
     {
       icon: Building2,
       title: "Prawo gospodarcze",
-      description: "Kompleksowa obsługa firm, umowy handlowe, spory gospodarcze i doradztwo biznesowe"
+      description: "Obsługa firm, umowy handlowe, spory gospodarcze i doradztwo biznesowe"
     },
     {
       icon: Users,
       title: "Prawo rodzinne",
-      description: "Rozwody, alimenty, ustalenie ojcostwa, sprawy opiekuńcze z empatią i dyskrecją"
+      description: "Rozwody, alimenty, ustalenie ojcostwa, sprawy opiekuńcze"
     },
     {
       icon: Shield,
       title: "Prawo karne",
-      description: "Obrona w sprawach karnych, reprezentacja przed sądem, doradztwo w postępowaniach"
+      description: "Obrona w sprawach karnych, reprezentacja przed sądem"
     },
     {
       icon: FileText,
       title: "Prawo cywilne",
-      description: "Umowy, odszkodowania, sprawy spadkowe, nieruchomości i inne sprawy cywilne"
+      description: "Umowy, odszkodowania, sprawy spadkowe, nieruchomości"
+    },
+    {
+      icon: Landmark,
+      title: "Prawo administracyjne",
+      description: "Sprawy z organami administracji, decyzje administracyjne, odwołania"
     }
   ];
 
@@ -33,15 +38,14 @@ const ServicesSection = () => {
             Specjalizacje
           </span>
           <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
-            Obszary <span className="text-accent">mojej praktyki</span>
+            Obszary <span className="text-accent">praktyki</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Oferuję profesjonalną pomoc prawną w kluczowych obszarach prawa,
-            zawsze z dbałością o najwyższe standardy obsługi klienta.
+            Profesjonalna pomoc prawna w kluczowych obszarach prawa.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {services.map((service, index) => (
             <Card
               key={index}
