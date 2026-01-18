@@ -4,8 +4,7 @@ A professional, modern website for Mirosław Sankiewicz Law Firm in Szczecin, Po
 
 ## 🌐 Live Website
 
-- **Testing URL:** https://matyss.github.io/sankiewicz-static-page/
-- **Production URL:** miroslawsankiewicz.pl *(when ready)*
+- **Production URL:** https://miroslawsankiewicz.pl
 
 ## ✨ Features
 
@@ -21,8 +20,7 @@ A professional, modern website for Mirosław Sankiewicz Law Firm in Szczecin, Po
 - **Styling:** Tailwind CSS + shadcn/ui components
 - **Build Tool:** Vite
 - **Email Service:** EmailJS with OVH Email Pro
-- **Hosting:** GitHub Pages
-- **CI/CD:** GitHub Actions
+- **Hosting:** OVH Shared Hosting
 
 ## 🚀 Development
 
@@ -64,21 +62,32 @@ The contact form uses EmailJS to send emails directly to `adwokat@miroslawsankie
 
 ## 🚀 Deployment
 
-### Automatic Deployment (Current Setup)
+### Deployment to OVH Hosting
 
-The website automatically deploys to GitHub Pages when changes are pushed to the `main` branch:
+The website is hosted on OVH shared hosting and deployed via FTP:
 
-1. **Push changes** to `main` branch
-2. **GitHub Actions** automatically builds the site
-3. **Deployed** to https://matyss.github.io/sankiewicz-static-page/
+1. **Make your changes** and test locally with `npm run dev`
+2. **Build the production site:**
+   ```bash
+   npm run build
+   ```
+3. **Deploy to OVH:**
+   ```bash
+   ./deploy.sh
+   ```
+   (You'll be prompted for your FTP password)
 
-### Custom Domain Setup (When Ready)
+4. **Commit and push to Git** for backup:
+   ```bash
+   git add .
+   git commit -m "Your update description"
+   git push origin main
+   ```
 
-To switch to the custom domain `miroslawsankiewicz.pl`:
-
-1. **Update DNS** records to point to GitHub Pages
-2. **Configure custom domain** in GitHub Pages settings
-3. **Update base URL** in `vite.config.ts`
+### Deployment Workflow
+- ✅ Build → Deploy → Git backup
+- The `deploy.sh` script uploads all files from `dist/` to OVH hosting
+- Site is live at https://miroslawsankiewicz.pl immediately after deployment
 
 ## 📝 Content Management
 
@@ -98,14 +107,11 @@ To switch to the custom domain `miroslawsankiewicz.pl`:
 - **Testimonials** - Client reviews and feedback
 - **Contact Section** - Contact form and office information
 
-## 🔧 Hosting Alternatives
+## 🔧 Technical Details
 
-This project is designed for static hosting and works with:
-
-- ✅ **GitHub Pages** (current)
-- ✅ **Netlify** (with form handling)
-- ✅ **Vercel**
-- ✅ **Cloudflare Pages**
+- **OVH Hosting:** Shared hosting with FTP access
+- **SSL Certificate:** Let's Encrypt (free, auto-renewing)
+- **Email:** OVH Email Pro with full DKIM/SPF configuration
 
 ## 📞 Support
 

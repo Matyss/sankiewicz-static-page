@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Deployment scripts (contains FTP credentials)
+deploy.sh
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
