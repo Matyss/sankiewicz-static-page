@@ -1,12 +1,13 @@
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, Mailbox } from 'lucide-react';
 import PrivacyPolicyModal from './PrivacyPolicyModal';
 import logoDark from '@/assets/logo_1.png';
+import adwokaturaLogo from '@/assets/adwokatura_logo.png';
 
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container-custom py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_2fr_2fr_1fr] gap-8">
 
           {/* Brand */}
           <div>
@@ -19,7 +20,7 @@ const Footer = () => {
               <h3 className="text-2xl font-bold">Mirosław Sankiewicz</h3>
             </div>
             <p className="text-primary-foreground/80 mb-4 leading-relaxed">
-              Doświadczony adwokat ze Szczecina oferujący profesjonalną pomoc prawną.
+              Adwokat z wieloletnim doświadczeniem ze Szczecina oferujący profesjonalną pomoc prawną.
             </p>
             <p className="text-sm text-primary-foreground/60">
               Kancelaria Adwokacka<br />
@@ -30,17 +31,38 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Kontakt</h4>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-4 h-4 text-accent" />
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=ul.+Dworcowa+20b,+70-952+Szczecin,+Poland"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-foreground/80 hover:text-accent text-sm transition-colors"
-                >
-                  ul. Dworcowa 20b, skrytka pocztowa nr 772<br />70-952 Szczecin
-                </a>
+            <div className="space-y-4">
+              <div>
+                <div className="flex items-start space-x-3 mb-1">
+                  <MapPin className="w-4 h-4 text-accent mt-0.5" />
+                  <div>
+                    <p className="text-xs text-primary-foreground/60 mb-1">Adres biura</p>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=Aleja+Niepodległości+14/2,+71-899+Szczecin,+Poland"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary-foreground/80 hover:text-accent text-sm transition-colors"
+                    >
+                      Aleja Niepodległości 14/2<br />71-899 Szczecin
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-start space-x-3">
+                  <Mailbox className="w-4 h-4 text-accent mt-0.5" />
+                  <div>
+                    <p className="text-xs text-primary-foreground/60 mb-1">Adres do doręczeń</p>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=ul.+Dworcowa+20b,+70-952+Szczecin,+Poland"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary-foreground/80 hover:text-accent text-sm transition-colors"
+                    >
+                      ul. Dworcowa 20b<br />skrytka pocztowa nr 772<br />70-952 Szczecin
+                    </a>
+                  </div>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-accent" />
@@ -73,6 +95,15 @@ const Footer = () => {
               <li>Prawo cywilne</li>
               <li>Prawo administracyjne</li>
             </ul>
+          </div>
+
+          {/* Advocacy Badge */}
+          <div className="flex items-start justify-center md:justify-start lg:justify-end">
+            <img
+              src={adwokaturaLogo}
+              alt="Okręgowa Rada Adwokacka"
+              className="h-32 w-auto"
+            />
           </div>
         </div>
 

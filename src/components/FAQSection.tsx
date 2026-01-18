@@ -35,7 +35,7 @@ const FAQSection = () => {
                 {
                     id: 'cost-recovery',
                     question: 'Czy mogę odzyskać koszty procesu od przeciwnika?',
-                    answer: 'Tak — zasadniczo strona przegrywająca ma obowiązek zwrócić stronie wygranej koszty niezbędne do celowego dochodzenia praw (w tym opłaty sądowe, wydatki i — częściowo — koszty zastępstwa procesowego). Zwrot kosztów zastępstwa procesowego jest jednak limitowany tabelami określonymi w rozporządzeniu Ministra Sprawiedliwości; sąd przyznaje zwrot w zakresie uznanym za celowy i zasadny.'
+                    answer: 'Tak — zasadniczo strona przegrywająca ma obowiązek zwrócić stronie wygranej koszty niezbędne do celowego dochodzenia praw (w tym opłaty sądowe, wydatki i — częściowo — koszty zastępstwa procesowego). Zwrot kosztów zastępstwa procesowego jest jednak limitowany stawkami określonymi w rozporządzeniu Ministra Sprawiedliwości; Sąd przyznaje zwrot w zakresie uznanym za celowy i zasadny.'
                 },
                 {
                     id: 'additional-costs',
@@ -51,12 +51,12 @@ const FAQSection = () => {
                 {
                     id: 'divorce-duration',
                     question: 'Ile trwa postępowanie rozwodowe?',
-                    answer: 'To zależy od sytuacji – w przypadku zgodnego wniosku i braku sporów może zakończyć się nawet na jednej rozprawie, ale przy sporach o dzieci, winę czy majątek postępowanie często trwa od kilku miesięcy do kilku lat.'
+                    answer: 'To zależy od sytuacji - w przypadku zgodnego wniosku i braku sporów może zakończyć się nawet na jednej rozprawie, ale przy sporach o dzieci, winę czy majątek postępowanie często trwa od kilku miesięcy do kilku lat.'
                 },
                 {
                     id: 'divorce-documents',
                     question: 'Jakie dokumenty potrzebne do rozwodu?',
-                    answer: 'Podstawowo: odpis aktu małżeństwa i odpisy aktów urodzenia wspólnych dzieci, a dodatkowo – dokumenty potwierdzające sytuację majątkową lub dowody potrzebne w sporach o winę, dzieci czy alimenty.'
+                    answer: 'Podstawowe dokumenty: odpis aktu małżeństwa i odpisy aktów urodzenia dzieci, a dodatkowo - dokumenty potwierdzające sytuację majątkową lub dowody potrzebne w sporach o ustalenie winy, kontakty z dziećmi czy alimenty.'
                 },
                 {
                     id: 'alimony-calculation',
@@ -66,12 +66,12 @@ const FAQSection = () => {
                 {
                     id: 'separation-vs-divorce',
                     question: 'Co to jest separacja i czym różni się od rozwodu?',
-                    answer: 'Separacja to formalne orzeczenie sądu stwierdzające rozkład pożycia, ale bez rozwiązania małżeństwa – małżonkowie nie mogą zawrzeć nowego związku. Rozwód natomiast definitywnie kończy małżeństwo.'
+                    answer: 'Separacja to formalne orzeczenie sądu stwierdzające rozkład pożycia, ale bez rozwiązania małżeństwa - małżonkowie nie mogą zawrzeć nowego związku. Rozwód natomiast definitywnie kończy małżeństwo.'
                 },
                 {
                     id: 'alimony-change',
                     question: 'Czy mogę zmienić wysokość alimentów?',
-                    answer: 'Tak – można żądać podwyższenia lub obniżenia alimentów, jeśli zmieniły się istotnie potrzeby uprawnionego albo sytuacja majątkowa i zarobkowa zobowiązanego.'
+                    answer: 'Tak - można żądać podwyższenia lub obniżenia alimentów, jeśli zmieniły się istotnie potrzeby uprawnionego albo sytuacja majątkowa i zarobkowa zobowiązanego.'
                 }
             ]
         },
@@ -82,22 +82,17 @@ const FAQSection = () => {
                 {
                     id: 'company-setup',
                     question: 'Jak założyć spółkę z o.o.?',
-                    answer: 'Można to zrobić przez internet w systemie S24 albo tradycyjnie u notariusza – konieczny jest umowy spółki, wpis do KRS, wniesienie kapitału zakładowego i zgłoszenia do urzędów.'
-                },
-                {
-                    id: 'business-vs-company',
-                    question: 'Jakie są różnice między działalnością gospodarczą a spółką?',
-                    answer: 'Działalność gospodarcza to forma jednoosobowa, z pełną odpowiedzialnością właściciela za długi, a spółka z o.o. jest osobnym podmiotem, gdzie wspólnicy co do zasady odpowiadają tylko do wysokości wniesionych wkładów.'
+                    answer: 'Można to zrobić przez internet w systemie S24 albo tradycyjnie u notariusza - konieczny jest umowy spółki, wpis do KRS, wniesienie kapitału zakładowego i zgłoszenia do urzędów.'
                 },
                 {
                     id: 'unpaid-contractor',
                     question: 'Co zrobić, gdy kontrahent nie płaci?',
-                    answer: 'Najpierw warto wezwać go do zapłaty i próbować ugody, a jeśli to nieskuteczne – można skierować sprawę do sądu i następnie egzekucji komorniczej.'
+                    answer: 'Najpierw warto wezwać go do zapłaty i próbować ugody, a jeśli to nieskuteczne - można skierować sprawę do sądu i następnie egzekucji komorniczej.'
                 },
                 {
                     id: 'contract-termination',
                     question: 'Jak rozwiązać umowę z kontrahentem?',
-                    answer: 'Zależy to od treści umowy – zwykle możliwe jest wypowiedzenie lub odstąpienie w przypadkach przewidzianych przez przepisy albo same postanowienia kontraktowe.'
+                    answer: 'Zależy to od treści umowy - zwykle możliwe jest wypowiedzenie lub odstąpienie w przypadkach przewidzianych przez przepisy albo za porozumieniem stron.'
                 },
                 {
                     id: 'employer-obligations',
@@ -112,23 +107,23 @@ const FAQSection = () => {
             questions: [
                 {
                     id: 'police-detention',
-                    question: 'Co robić, gdy zostanę zatrzymany przez policję?',
-                    answer: 'Masz prawo do kontaktu z adwokatem, poinformowania bliskiej osoby, a także prawo do zachowania milczenia – policja musi pouczyć Cię o przysługujących prawach.'
+                    question: 'Co robić, gdy zostanę zatrzymany przez Policję?',
+                    answer: 'Masz prawo do kontaktu z adwokatem, poinformowania bliskiej osoby, a także prawo do zachowania milczenia - policja musi pouczyć Cię o przysługujących prawach.'
                 },
                 {
                     id: 'avoid-prison',
-                    question: 'Czy można uniknąć kary więzienia?',
-                    answer: 'Tak – w wielu przypadkach sąd może orzec karę ograniczenia wolności, grzywnę albo warunkowe zawieszenie wykonania kary pozbawienia wolności, zależnie od rodzaju i okoliczności czynu.'
+                    question: 'Czy można uniknąć kary pozbawienia wolności tudzież warunkowo umorzyć postępowanie?',
+                    answer: 'Tak - w wielu przypadkach Sąd może orzec karę ograniczenia wolności, grzywnę albo warunkowe zawieszenie wykonania kary pozbawienia wolności, zależnie od rodzaju i okoliczności czynu.'
                 },
                 {
                     id: 'misdemeanor-proceedings',
                     question: 'Co to jest postępowanie w sprawie o wykroczenie?',
-                    answer: 'To uproszczona procedura dotycząca lżejszych naruszeń prawa (np. drobne kradzieże, wykroczenia drogowe), zwykle kończąca się mandatem, naganą, grzywną lub ograniczeniem wolności.'
+                    answer: 'To uproszczona procedura dotycząca lżejszych naruszeń prawa (np. drobne kradzieże, wykroczenia drogowe, zakłócanie spokoju publicznego), zwykle kończąca się naganą, grzywną, ograniczeniem wolności lub aresztem, a w postępowaniach mandatowych - mandatem.'
                 },
                 {
                     id: 'criminal-mediation',
                     question: 'Jak działa postępowanie mediacyjne w sprawach karnych?',
-                    answer: 'Mediacja polega na dobrowolnym spotkaniu pokrzywdzonego i oskarżonego z udziałem mediatora; jej celem jest ugoda i naprawienie szkody, a sąd może uwzględnić wynik mediacji przy wymiarze kary.'
+                    answer: 'Mediacja polega na dobrowolnym spotkaniu pokrzywdzonego i podejrzanego/oskarżonego z udziałem mediatora; jej celem jest ugoda, naprawienie szkody, wypłata zadośćuczynienia. Sąd może uwzględnić wynik mediacji przy wymiarze kary.'
                 }
             ]
         },
@@ -138,28 +133,28 @@ const FAQSection = () => {
             questions: [
                 {
                     id: 'case-duration',
-                    question: 'Jak długo trwa sprawa w sądzie?',
-                    answer: 'To zależy od rodzaju sprawy i obciążenia sądu – proste sprawy mogą zakończyć się w kilka miesięcy, a złożone postępowania trwają często kilka lat.'
+                    question: 'Jak długo trwa sprawa w Sądzie?',
+                    answer: 'To zależy od rodzaju sprawy i obciążenia sądu - proste sprawy mogą zakończyć się w kilka miesięcy, a złożone postępowania trwają często kilka lat.'
                 },
                 {
                     id: 'self-representation',
-                    question: 'Czy mogę reprezentować się sam w sądzie?',
-                    answer: 'Tak – co do zasady każda osoba fizyczna może występować przed sądem samodzielnie, ale w sprawach bardziej skomplikowanych warto skorzystać z pomocy profesjonalnego pełnomocnika.'
+                    question: 'Czy mogę reprezentować się sam w Sądzie?',
+                    answer: 'Tak - co do zasady każda osoba fizyczna może występować przed sądem samodzielnie, ale w sprawach bardziej skomplikowanych warto skorzystać z pomocy profesjonalnego pełnomocnika.'
                 },
                 {
                     id: 'power-of-attorney',
-                    question: 'Co to jest pełnomocnictwo i kiedy jest potrzebne?',
-                    answer: 'Pełnomocnictwo to pisemne upoważnienie do działania w imieniu strony; jest wymagane, gdy w sądzie chce Cię reprezentować adwokat, radca prawny lub inna osoba.'
+                    question: 'Co to jest pełnomocnictwo procesowe / upoważnienie do obrony i kiedy jest potrzebne?',
+                    answer: 'Pełnomocnictwo procesowe to pisemne upoważnienie do działania w imieniu strony; jest wymagane, gdy chcesz w Sądzie być reprezentowany przez adwokata, radcę prawnego lub inne osoby.'
                 },
                 {
                     id: 'appeal-deadlines',
-                    question: 'Jakie są terminy na odwołanie?',
-                    answer: 'Zwykle na apelację przysługuje 14 dni od doręczenia wyroku z uzasadnieniem, a na zażalenia – 7 dni; w innych postępowaniach terminy mogą się różnić.'
+                    question: 'Jakie są terminy zaskarżania orzeczeń?',
+                    answer: 'Zwykle na apelację przysługuje 14 dni od doręczenia wyroku z uzasadnieniem, a na zażalenia - 7 dni; w innych postępowaniach terminy mogą się różnić.'
                 },
                 {
                     id: 'losing-case',
                     question: 'Co zrobić, gdy przegram sprawę?',
-                    answer: 'Możesz wnieść środek odwoławczy, a jeśli wyrok stanie się prawomocny – pozostaje jego wykonanie; w niektórych przypadkach możliwe są jeszcze nadzwyczajne środki zaskarżenia.'
+                    answer: 'Możesz zaskarżyć orzeczenie, a jeśli wyrok stanie się prawomocny - pozostaje jego wykonanie; w niektórych przypadkach możliwe są jeszcze nadzwyczajne środki zaskarżenia.'
                 }
             ]
         },
@@ -169,18 +164,13 @@ const FAQSection = () => {
             questions: [
                 {
                     id: 'court-jurisdiction',
-                    question: 'W którym sądzie będzie rozpatrywana moja sprawa?',
-                    answer: 'Decyduje właściwość miejscowa i rzeczowa — sprawy cywilne, rodzinne i gospodarcze są zwykle rozpatrywane w sądzie rejonowym właściwym dla miejsca zamieszkania lub siedziby firmy, natomiast sprawy odwoławcze lub bardziej złożone – w Sądzie Okręgowym. W Szczecinie sądami niższego stopnia są m.in. Sąd Rejonowy Szczecin-Centrum i Sąd Rejonowy Prawobrzeże i Zachód.'
+                    question: 'W którym Sądzie będzie rozpatrywana moja sprawa?',
+                    answer: 'Decyduje właściwość miejscowa, rzeczowa i inne — sprawy pierwszoinstancyjne cywilne, rodzinne i gospodarcze są zwykle rozpatrywane w Sądzie rejonowym lub okręgowym (w zależności od wartości sporu) wlaściwych dla miejsca zamieszkania lub siedziby firmy pozwanego, natomiast sprawy drugoinstancyjne - w Sądzie wyższego rzędu. W Szczecinie Sądami pierwszej instancji są m.in. Sąd Rejonowy Szczecin-Centrum i Sąd Rejonowy Prawobrzeże i Zachód.'
                 },
                 {
                     id: 'court-hours',
                     question: 'Jakie są godziny pracy sądów w Szczecinie?',
-                    answer: 'Przykładowo Sąd Rejonowy w Prawobrzeże i Zachód przyjmuje interesantów: poniedziałki: 7:30 – 18:00, od wtorku do piątku: 7:30 – 15:30. Godziny sądów rejonowych i poszczególnych wydziałów mogą się różnić — najlepiej sprawdzić na stronie sądu, do którego kierujesz sprawę.'
-                },
-                {
-                    id: 'document-submission',
-                    question: 'Gdzie złożyć dokumenty w Szczecinie?',
-                    answer: 'Dokumenty zwykle składa się w Biurze Podawczym lub Biurze Obsługi Interesanta (BOI) sądu właściwego — np. w budynku sądu rejonowego odpowiedniego dla Twojego adresu. W przypadku wydziałów Sądu Okręgowego w Szczecinie: część wydziałów znajduje się przy ul. Piotra Skargi 19, inne przy ul. Małopolskiej 17, główna siedziba Sądu Okręgowego: ul. Kaszubska 42.'
+                    answer: 'Przykładowo Sąd Rejonowy Szczecin-Prawobrzeze i Zachód oraz Sąd Rejonowy Szczecin-Centrum przyjmują interesantów: poniedziałki: 7:30 - 18:00, od wtorku do piątku: 7:30 - 15:30. Godziny urzędowania sądów najlepiej sprawdzić na stronie internetowej sądu, do którego kierujesz sprawę.'
                 }
             ]
         }

@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import statueImage from '@/assets/statue.jpg';
+import adwokaturaLogo from '@/assets/adwokatura_logo.png';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -20,13 +21,22 @@ const HeroSection = () => {
           {/* Content */}
           <div className="text-center lg:text-left fade-in">
             <div className="mb-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
-                Mirosław
-                <br />
-                <span className="text-accent">Sankiewicz</span>
-              </h1>
+              <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6 mb-6">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
+                  Mirosław
+                  <br />
+                  <span className="text-accent">Sankiewicz</span>
+                </h1>
+                <div className="mt-4 lg:mt-0 flex justify-center lg:justify-start">
+                  <img
+                    src={adwokaturaLogo}
+                    alt="Okręgowa Rada Adwokacka"
+                    className="h-16 md:h-20 lg:h-24 w-auto"
+                  />
+                </div>
+              </div>
               <p className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">
-                Doświadczony adwokat ze Szczecina. Profesjonalna pomoc prawna w sprawach gospodarczych, rodzinnych, karnych, cywilnych i administracyjnych.
+                Adwokat ze Szczecina z wieloletnim doświadczeniem. Profesjonalna pomoc prawna w sprawach cywilnych, gospodarczych, prawa pracy,rodzinnych, karnych, podatkowych, administracyjnych i innych.
               </p>
             </div>
 

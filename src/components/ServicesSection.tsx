@@ -4,29 +4,29 @@ import { Card, CardContent } from '@/components/ui/card';
 const ServicesSection = () => {
   const services = [
     {
-      icon: Building2,
-      title: "Prawo gospodarcze",
-      description: "Obsługa firm, umowy handlowe, spory gospodarcze i doradztwo biznesowe"
-    },
-    {
-      icon: Users,
-      title: "Prawo rodzinne",
-      description: "Rozwody, alimenty, ustalenie ojcostwa, sprawy opiekuńcze"
-    },
-    {
-      icon: Shield,
-      title: "Prawo karne",
-      description: "Obrona w sprawach karnych, reprezentacja przed sądem"
-    },
-    {
       icon: FileText,
       title: "Prawo cywilne",
       description: "Umowy, odszkodowania, sprawy spadkowe, nieruchomości"
     },
     {
+      icon: Building2,
+      title: "Prawo gospodarcze",
+      description: "Obsługa podmiotów gospodarczych, umowy handlowe, spory gospodarcze i doradztwo biznesowe i inne"
+    },
+    {
+      icon: Users,
+      title: "Prawo rodzinne",
+      description: "Rozwody, podział majątku, alimenty i inne"
+    },
+    {
+      icon: Shield,
+      title: "Prawo karne",
+      description: "Obrona w sprawach karnych, reprezentacja przed organami ścigania i wymiaru sprawiedliwości, obrona w sprawach karno-skarbowych"
+    },
+    {
       icon: Landmark,
       title: "Prawo administracyjne",
-      description: "Sprawy z organami administracji, decyzje administracyjne, odwołania"
+      description: "Rozprawy przed wojewódzkim i naczelnym Sądem Administracyjnym"
     }
   ];
 
@@ -35,7 +35,7 @@ const ServicesSection = () => {
       <div className="container-custom">
         <div className="text-center mb-16 fade-in">
           <span className="inline-block px-4 py-2 bg-accent/10 text-accent font-medium text-sm rounded-full mb-4">
-            Specjalizacje
+            Specjalizacje (przykładowe)
           </span>
           <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
             Obszary <span className="text-accent">praktyki</span>

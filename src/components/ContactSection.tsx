@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Loader2 } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Loader2, Mailbox } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -102,7 +102,14 @@ const ContactSection = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Adres",
+      title: "Adres biura",
+      subtitle: "spotkania po uprzednim umówieniu",
+      content: "Aleja Niepodległości 14/2\n71-899 Szczecin",
+      link: "https://www.google.com/maps/search/?api=1&query=Aleja+Niepodległości+14/2,+71-899+Szczecin,+Poland"
+    },
+    {
+      icon: Mailbox,
+      title: "Adres do doręczeń",
       content: "ul. Dworcowa 20b\nskrytka pocztowa nr 772\n70-952 Szczecin",
       link: "https://www.google.com/maps/search/?api=1&query=ul.+Dworcowa+20b,+70-952+Szczecin,+Poland"
     },
@@ -155,7 +162,7 @@ const ContactSection = () => {
             Umów <span className="text-accent">konsultację</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Potrzebujesz pomocy prawnej? Skontaktuj się już dziś.
+            Potrzebujesz pomocy prawnej? Skontaktuj się poprzez formularz kontaktowy.
           </p>
         </div>
 
@@ -174,6 +181,11 @@ const ContactSection = () => {
                       <h3 className="font-semibold text-primary mb-2">
                         {info.title}
                       </h3>
+                      {info.subtitle && (
+                        <p className="text-xs text-gray-500 italic mb-2">
+                          {info.subtitle}
+                        </p>
+                      )}
                       {info.link ? (
                         <a
                           href={info.link}
@@ -195,7 +207,7 @@ const ContactSection = () => {
 
           {/* Contact Form */}
           <div className="lg:col-span-2 fade-in">
-            <Card className="border-0 shadow-lg">
+            <Card className="border-0 shadow-lg h-full">
               <CardContent className="p-8">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -261,8 +273,7 @@ const ContactSection = () => {
                       value={formData.message}
                       onChange={(e) => handleInputChange('message', e.target.value)}
                       required
-                      rows={5}
-                      className="w-full"
+                      className="w-full min-h-[240px] resize-none"
                       placeholder="Proszę opisać swoją sprawę jak najdokładniej..."
                     />
                   </div>
@@ -315,9 +326,10 @@ const ContactSection = () => {
               <div className="text-center">
                 <MapPin className="w-12 h-12 text-accent mx-auto mb-4" />
                 <p className="text-lg font-medium text-primary mb-2">Kancelaria Adwokacka</p>
-                <p className="text-muted-foreground">ul. Dworcowa 20b, skrytka pocztowa nr 772<br />70-952 Szczecin</p>
+                <p className="text-sm text-gray-500 italic mb-2">spotkania po uprzednim umówieniu</p>
+                <p className="text-muted-foreground">Aleja Niepodległości 14/2<br />71-899 Szczecin</p>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=ul.+Dworcowa+20b,+70-952+Szczecin,+Poland"
+                  href="https://www.google.com/maps/search/?api=1&query=Aleja+Niepodległości+14/2,+71-899+Szczecin,+Poland"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-4 text-accent hover:text-accent/80 font-medium"
